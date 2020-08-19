@@ -17,16 +17,23 @@ ul.reset {
 li.box{
     display: flex;
     justify-content:center;
-    max-width: 80vh;
+    max-width: 45vw;
 }
 
 div.text{
     background-color: aqua;
-    display: flex;
+    display: block;
     flex-flow: row wrap;
 }
 
-i.price{
-    display:none
+div.text span{
+    background-color: aqua;
+    display: block;
+    flex-flow: row wrap;
+}
 
+div.pic{
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 220px;
 }

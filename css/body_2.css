@@ -1,0 +1,45 @@
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+    display: flex;
+    flex-flow: row wrap;
+    /*background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5pAWvKU6DBHRR-wQ7q0ikHWXYMnvQ3XYAWQ&usqp=CAU");
+    */
+}
+
+ul.reset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+
+li{
+    display: block;
+    max-width: 45vw;
+    
+}
+
+div.text{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    
+    min-width: 100px;
+}
+
+i.price{
+    
+
+}
+
+div.text h4,div.text i{
+    display: block;
+    min-width: 100px;
+}
+div.pic{
+    
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 250px;
+}
