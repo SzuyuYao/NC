@@ -17,8 +17,16 @@ ul.reset {
 li.box{
     display: flex;
     justify-content:center;
+    max-width: 80vh;
 }
 
 div.text{
     background-color: aqua;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+i.price{
+    display:none
+
 }
