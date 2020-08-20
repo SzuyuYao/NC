@@ -7,7 +7,7 @@ body {
     margin: 20px;
     line-height: 26px;
     display: grid;
-    grid-column: 150px 1fr;
+    grid-column: 150px 1fr 50px;
     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5pAWvKU6DBHRR-wQ7q0ikHWXYMnvQ3XYAWQ&usqp=CAU");
 }
 
@@ -72,4 +72,8 @@ div.pic{
     display: flex;
     flex-flow: row wrap;
     min-width: 250px;
+}
+
+div.home img{
+    width: 50px;
 }
