@@ -4,8 +4,9 @@ body {
     font: 100% Lucida Sans, Verdana;
     margin: 20px;
     line-height: 26px;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    display: grid;
+    grid-column: 150px 1fr;
     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5pAWvKU6DBHRR-wQ7q0ikHWXYMnvQ3XYAWQ&usqp=CAU");
     
 }
