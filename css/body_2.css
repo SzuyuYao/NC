@@ -7,7 +7,9 @@ body {
     margin: 20px;
     line-height: 26px;
     display: grid;
-    grid-column: 150px 1fr 50px;
+    
+    grid-column: 150px 1fr 75px;
+    
     background-color: lemonchiffon;
 }
 
@@ -28,7 +30,7 @@ div.head{
 ul.reset {
     display: flex;
     flex-flow: row wrap;
-    justify-content:space-between;
+    justify-content:space-around;
     
 }
 
