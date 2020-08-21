@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>意見表單</title>
+    <link rel="stylesheet" href="path/to/style.css" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css"
+        integrity="sha512-AMDXrE+qaoUHsd0DXQJr5dL4m5xmpkGLxXZQik2TvR2VCVKT/XRPQ4e/LTnwl84mCv+eFm92UG6ErWDtGM/Q5Q=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css"
+        integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/regular.min.css"
+        integrity="sha512-qgtcTTDJDk6Fs9eNeN1tnuQwYjhnrJ8wdTVxJpUTkeafKKP6vprqRx5Sj/rB7Q57hoYDbZdtHR4krNZ/11zONg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/solid.min.css"
+        integrity="sha512-QN7X/bUbbeel9bbq6JVNJXk1Zowt+n+QPN+DjhEmTa4TdL1YPCsCey5JrvfRW8xp28LDYgGG/waNVdrhwMQmVQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/svg-with-js.min.css"
+        integrity="sha512-gX1L9ovb6aHWz/bJYE364vKdGBDOeZLMt168kVRpRdo2I2TpveBJpbDzHMZQWy8liTTG7Qm9Onl1Ji92Eo3x7Q=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.min.css"
+        integrity="sha512-njWvXjJPMYfvYHb2DAnEL0MS5KEmoIeZVdpK7tpxiApoL3ZoUzHSvkoSFrbASdTuIHnEVG+Ko+ES/DXKygBH4g=="
+        crossorigin="anonymous" />
+    <style>
+        /* CSS */
+        body {
+            background-color: lemonchiffon;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-areas:
+                "header header header"
+                "left main right"
+                "footer footer footer";
+            height: 1000px;
+            font: 100% Lucida Sans, Verdana;
+
+        }
+
+        .header {
+            display: grid;
+            grid-area: header;
+            justify-items: center;
+            margin-top: 30px;
+            font-size: 2rem;
+            grid-area: header;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: black;
+            font: 12px;
+            color: white;
+            text-align: right;
+            padding-right: 100px;
+            padding-top: 20px;
+        }
+
+        .left {
+            grid-area: left;
+            color:rgb(255, 11, 11);
+        }
+
+        .right {
+            grid-area: right;
+            color:orange;
+        }
+
+        .main {
+            display: grid;
+            grid-area: main;
+            justify-items: center;
+            font-size: 18px;
+            margin-top: 20px;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header" style="font-weight:bold">
+            意見表單
+        </div>
+        <div class="left"style="font-size: 3rem;">
+            <i class="fas fa-bread-slice fa-spin"></i>
+
+        </div>
+        <div class="main">
+            <form>
+                主旨
+                <p><select name="num4" style="width:175px">
+                        <option value="1">請選擇主旨</option>
+                        <option value="2">商品客訴</option>
+                        <option value="3">其他客訴</option>
+                        <option value="4">我要發言</option>
+                    </select></p>
+                <p>姓名</p>
+                <p> <input type="text" name="name" required></p>
+                <p>電話 </p>
+                <p><input type="tel" name="phone" required></p>
+                <p>E-mail</p>
+                <p><input type="email" name="email"></p>
+                <p>意見內容</p>
+                <p><textarea name="textarea" rows="10" cols="50"></textarea></p>
+                <p>店家資訊
+                    <select name="num4">
+                        <option value="1">縣市</option>
+                        <option value="2">商品客訴</option>
+                        <option value="3">其他客訴</option>
+                        <option value="4">我要發言</option>
+                    </select>
+                    <select name="num4">
+                        <option value="1">鄉鎮區</option>
+                        <option value="2">商品客訴</option>
+                        <option value="3">其他客訴</option>
+                        <option value="4">我要發言</option>
+                    </select></p>
+                <p>店名 <input type="text" name="shop"></p>
+                <p><button type="button" class="btn btn-danger">送出</button></p>
+
+            </form>
+        </div>
+
+
+        <div class="right"style="font-size:3rem;">
+            <i class="fas fa-hamburger fa-spin"></i>
+        </div>
+        <div class="footer">
+            <p>服務專線：04-xxxxxxx</p>
+            <p>地址：台中市xx路xx號</p>
+        </div>
+    </div>
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/brands.min.js"
+        integrity="sha512-lFwtJUcrYHDi7C0sfttJF03X9NJ2JU2fwecdDOrf3exNabkIQshjhLmBuDAk/pKuJW0x32Ity99G/B2be9X/wA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/conflict-detection.min.js"
+        integrity="sha512-7yDuMp6y03VWjGIL/ML9Ayav2mirO/FlRWJbSvCYHhmxPc0L14KVHycH2xV5mT6BI4Mt7iQc/7JhrRO3Gfuz+A=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/fontawesome.min.js"
+        integrity="sha512-i3N2a3sMtKOQHXCJF3qEpce5twcGN9mRsWQe6PUTf9WS/eG5XkivI97uxit7B2nRGz5XuoszBaqndSqxdeVfag=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js"
+        integrity="sha512-r6vrUzzJsN9hfGYoYo5qIFyuI4Hg/6wkIEaxCgFWneGHo1Nn2ES58YuRmrUU44JrD64yIBNwvepKexEIyk+TTQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/solid.min.js"
+        integrity="sha512-y0arK64LEWHxtkMLukPhGHPEu2v1fpWcK+mNRolb7DIjqqD5dVJDWKCHiBFOdM+lsPAKZZBC1x/hD+PXTS3Djg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/v4-shims.min.js"
+        integrity="sha512-IsicCPbdiMPNyF6MqFLfWujYC+x5K5Fmew2e1+5EvlVtC5NGkbBbVFH16Ruqpm/YjIkmjgqKk0t0uSUtksCHhw=="
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
