@@ -8,12 +8,19 @@ body {
     line-height: 26px;
     display: grid;
     grid-column: 150px 1fr 50px;
-    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5pAWvKU6DBHRR-wQ7q0ikHWXYMnvQ3XYAWQ&usqp=CAU");
+    background-color: lemonchiffon;
+}
+
+div.head button{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 div.head{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 50px;
     font-family: 'Noto Serif TC', serif;
 }
@@ -68,10 +75,11 @@ h4.name{
 }
 
 div.pic{
-    
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     min-width: 250px;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5pAWvKU6DBHRR-wQ7q0ikHWXYMnvQ3XYAWQ&usqp=CAU");
 }
 
 div.home img{
