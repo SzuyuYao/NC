@@ -31,7 +31,7 @@
         integrity="sha512-njWvXjJPMYfvYHb2DAnEL0MS5KEmoIeZVdpK7tpxiApoL3ZoUzHSvkoSFrbASdTuIHnEVG+Ko+ES/DXKygBH4g=="
         crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script src="NC/js/jquery.twzipcode.min.js"></script>
+    <script src="./js/jquery.twzipcode.min.js"></script>
     <style>
         /* CSS */
         body {
@@ -95,8 +95,9 @@
     <script>
         function myFunction() {
             alert("已送出表單，客服人員會盡快為您服務");
-            
+            document.location.reload();
         }
+        $("#twzipcode").twzipcode();
     </script>
 </head>
 
@@ -134,10 +135,11 @@
                         <script>
                             $("#twzipcode").twzipcode();
                         </script>
+
                     </span>
 
                 <p>店名 <input type="text" name="shop"></p>
-                <span>                    
+                <span>
                     <input type="button" class="btn btn-danger" onclick="myFunction()" value="送出">
                 </span>
             </form>
