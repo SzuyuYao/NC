@@ -5,31 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>菜單_超值套餐</title>
-    <link rel="stylesheet" href="./css/body.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
-    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" 
-    crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/body_2.css" />
     <script src="./js/cal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/body.css" />
+    <script>
+        $(document).ready(function () {
+            $("#set").click(function () {
+                $(".menu1").empty();
+                $(".menu2").load("./菜單_超值套餐.html .menu2");
+            });
+        });
+        $(document).ready(function () {
+            $("#tost").click(function () {
+                $(".menu2").empty();
+                $(".menu1").load("./菜單_厚片.html .menu1");
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <div class="head">
-        <button type="button" onclick="window.location.href = './菜單_厚片.html'">厚片土司</button>
-        <button type="button" onclick="window.location.href = './菜單_超值套餐.html'">超值套餐</button>
-    </div>
-    <ul class="reset">
-        <div class="list_1">
-            <li class="box showrole scroll-view" data-scroll-view="init">
-                <div class="pic">
-                    <div>
-                        <button type="button" onclick="money=tot(100,money)">
-                            <img src="pic/1545188134654428917.png" alt="1號：雞腿捲餐" class="lazy" style="display: block;">
-                        </button>
+    <div>
+        <div class="sticky-top">
+            <ul style="background-color: white" class="nav nav-pills,d-flex align-items-center d-flex">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html"><img src="./pic/title1.png" height="80"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                        aria-expanded="false">Menu</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="菜單_超值套餐.html">超值套餐<p><small>Extra value meal</small></p></a>
+                        <a class="dropdown-item" href="菜單_厚片.html">厚片<p><small>Thick cut toast</small></p></a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="意見表單.html">意見表單<p><small>Contact us</small></p></a>
+                </li>
+                
+
+                <div class="ml-auto p-2">
+                    <span style="font-size: 50px; color: #fdc68cb0;margin:5px;"><i class="fas fa-utensils"></i></span>
+                    <span style="font-size: 50px; color: #fdc68cb0;margin:5px;"><i class="fas fa-hamburger"></i></span>
+                    <span style="font-size: 50px; color: #fdc68cb0;"><i class="fas fa-bread-slice"></i></span>
                 </div>
-                <div class="text">
-                    <h4 class="name">1號：雞腿捲餐
-                        <i class="icon-spicy"></i></h4>
+            </ul>
+        </div>
+    </div>
+    <div class="head">
+        <button id="tost">厚片土司</button>
+        <button id="set">超值套餐</button>
+    </div>
+    <div class="menu1">
+
+    </div>
+    <div class="menu2">
+        <ul class="reset">
+            <div class="list_1">
+                <li class="box showrole scroll-view" data-scroll-view="init">
+                    <div class="pic">
+                        <div>
+                            <button type="button" onclick="money=tot(100,money)">
+                                <img src="pic/1545188134654428917.png" alt="1號：雞腿捲餐" class="lazy"
+                                    style="display: block;">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h4 class="name">1號：雞腿捲餐
+                            <i class="icon-spicy"></i>
+                        </h4>
                         <i class="price">COST/100</i>
                         <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
                     </div>
@@ -40,7 +92,8 @@
                     <div class="pic">
                         <div>
                             <button type="button" onclick="money=tot(100,money)">
-                                <img src="pic/1545187741186450310.png" alt="2號：蘋果沙拉燒餅餐" class="lazy" style="display: block;">
+                                <img src="pic/1545187741186450310.png" alt="2號：蘋果沙拉燒餅餐" class="lazy"
+                                    style="display: block;">
                             </button>
                         </div>
                     </div>
@@ -56,7 +109,8 @@
                     <div class="pic">
                         <div>
                             <button type="button" onclick="money=tot(150,money)">
-                                <img src="pic/1545187723192761356.png" alt="3號：3.5盎司厚牛堡餐" class="lazy" style="display: block;">
+                                <img src="pic/1545187723192761356.png" alt="3號：3.5盎司厚牛堡餐" class="lazy"
+                                    style="display: block;">
                             </button>
                         </div>
                     </div>
@@ -72,95 +126,108 @@
                     <div class="pic">
                         <div>
                             <button type="button" onclick="money=tot(160,money)">
-                                <img src="pic/1545187708891954172.png" alt="4號：勁辣雞腿堡餐" class="lazy" style="display: block;">
-                            </button></div>
+                                <img src="pic/1545187708891954172.png" alt="4號：勁辣雞腿堡餐" class="lazy"
+                                    style="display: block;">
+                            </button>
                         </div>
-                        <div class="text">
-                            <h4 class="name">4號：勁辣雞腿堡餐
-                                <i class="icon-spicy"></i></h4>
-                                <i class="price">COST/160</i>
-                                <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
-                            </div>
-                        </li>
                     </div>
-                    <div class="list_12">
-                        <li class="box showrole scroll-view" data-scroll-view="init">
-                            <div class="pic">
-                                <div>
-                                    <button type="button" onclick="money=tot(200,money)">
-                                        <img src="pic/1545187694726808403.png" alt="5號：美國鄉村餐" class="lazy" style="display: block;">
-                                    </button></div>
-                                </div>
-                                <div class="text">
-                                    <h4 class="name">5號：美國鄉村餐</h4>
-                                    <i class="price">COST/200</i> 
-                                    <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
-                                </div>
-                            </li>
+                    <div class="text">
+                        <h4 class="name">4號：勁辣雞腿堡餐
+                            <i class="icon-spicy"></i>
+                        </h4>
+                        <i class="price">COST/160</i>
+                        <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
+
+                    </div>
+                </li>
+            </div>
+            <div class="list_12">
+                <li class="box showrole scroll-view" data-scroll-view="init">
+                    <div class="pic">
+                        <div>
+                            <button type="button" onclick="money=tot(200,money)">
+                                <img src="pic/1545187694726808403.png" alt="5號：美國鄉村餐" class="lazy"
+                                    style="display: block;">
+                            </button>
                         </div>
-                        <div class="list_13">
-                            <li class="box showrole scroll-view" data-scroll-view="init">
-                                <div class="pic">
-                                    <div>
-                                        <button type="button" onclick="money=tot(200,money)">
-                                            <img src="pic/1545187672870160385.png" alt="6號：元氣總匯餐" class="lazy" style="display: block;">
-                                        </button></div>
-                                    </div>
-                                    <div class="text">
-                                        <h4 class="name">6號：元氣總匯餐</h4>
-                                        <i class="price">COST/200</i>
-                                        <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
-                                    </div>
-                                </li>
-                            </div>
-                            <div class="list_14">
-                                <li class="box showrole scroll-view" data-scroll-view="init">
-                                    <div class="pic">
-                                        <div>
-                                            <button type="button" onclick="money=tot(150,money)">
-                                                <img src="pic/1545187648929824024.png" alt="7號：招牌蛋餅餐" class="lazy" style="display: block;">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h4 class="name">7號：招牌蛋餅餐</h4>
-                                        <i class="price">COST/150</i>
-                                        <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
-                                    </div>
-                                </li>
-                            </div>
-                            <div class="list_15">
-                                <li class="box showrole scroll-view" data-scroll-view="init">
-                                    <div class="pic">
-                                        <div>
-                                            <button type="button" onclick="money=tot(170,money)">
-                                                <img src="pic/1545187626798211835.png" alt="8號：雙層豬肉起司堡餐" class="lazy" style="display: block;">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h4 class="name">8號：雙層豬肉起司堡餐</h4>
-                                        <i class="price">COST/170</i>
-                                        <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
-                                    </div>
-                                </li>
-                            </div>
-                        </ul>
-                        <div class="tot">
-                            <p id="tot_money">總金額:</p>
+                    </div>
+                    <div class="text">
+                        <h4 class="name">5號：美國鄉村餐</h4>
+                        <i class="price">COST/200</i>
+                        <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
+                    </div>
+                </li>
+            </div>
+            <div class="list_13">
+                <li class="box showrole scroll-view" data-scroll-view="init">
+                    <div class="pic">
+                        <div>
+                            <button type="button" onclick="money=tot(200,money)">
+                                <img src="pic/1545187672870160385.png" alt="6號：元氣總匯餐" class="lazy"
+                                    style="display: block;">
+                            </button>
                         </div>
-                        <div class="home">
-                            <nav>
-                                <a href="index.html">
-                                    <nav>
-                                        <a href="index.html">
-                                            <span style="font-size: 3em; color: Tomato;">
-                                                <i class="fas fa-home fa-spin"></i>
-                                            </a>
-                                        </nav>
-                                    </a>
-                                </nav>
-                            </div>                            
-                        </body>
-                        
-                        </html>
+                    </div>
+                    <div class="text">
+                        <h4 class="name">6號：元氣總匯餐</h4>
+                        <i class="price">COST/200</i>
+                        <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
+                    </div>
+                </li>
+            </div>
+            <div class="list_14">
+                <li class="box showrole scroll-view" data-scroll-view="init">
+                    <div class="pic">
+                        <div>
+                            <button type="button" onclick="money=tot(150,money)">
+                                <img src="pic/1545187648929824024.png" alt="7號：招牌蛋餅餐" class="lazy"
+                                    style="display: block;">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h4 class="name">7號：招牌蛋餅餐</h4>
+                        <i class="price">COST/150</i>
+                        <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
+                    </div>
+                </li>
+            </div>
+            <div class="list_15">
+                <li class="box showrole scroll-view" data-scroll-view="init">
+                    <div class="pic">
+                        <div>
+                            <button type="button" onclick="money=tot(170,money)">
+                                <img src="pic/1545187626798211835.png" alt="8號：雙層豬肉起司堡餐" class="lazy"
+                                    style="display: block;">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h4 class="name">8號：雙層豬肉起司堡餐</h4>
+                        <i class="price">COST/170</i>
+                        <span class="notice">南：套餐附錫蘭奶茶(L)／北.中.東：套餐附錫蘭奶茶(M)</span>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="tot">
+        <p id="tot_money">總金額:</p>
+    </div>
+    <div class="home">
+        <nav>
+            <a href="index.html">
+                <nav>
+                    <a href="index.html">
+                        <span style="font-size: 3em; color: Tomato;">
+                            <i class="fas fa-home fa-spin"></i>
+                    </a>
+                </nav>
+            </a>
+        </nav>
+    </div>
+
+</body>
+
+</html>

@@ -2,14 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
 
 
-body {
-    font: 100% Lucida Sans, Verdana;
-    margin: 20px;
-    line-height: 26px;
-    display: grid;
-    
-    grid-column: 150px 1fr 75px;
-    
+body  {
+    font: 100% Lucida Sans, Verdana;   
     background-color: lemonchiffon;
 }
 
@@ -27,24 +21,24 @@ div.head{
     font-family: 'Noto Serif TC', serif;
 }
 
-ul.reset {
+.menu1 ul.reset {
     display: flex;
     flex-flow: row wrap;
     justify-content:space-around;
     
 }
 
-div.list{
+.menu1 div.list{
     margin: 0.5vh;
 }
 
-li{
+.menu1 li{
     display: block;
     max-width: 45vw;
     
 }
 
-div.text{
+.menu1 div.text{
     background-color: aqua;
     display: flex;
     justify-content: center;
@@ -52,34 +46,38 @@ div.text{
     min-width: 100px;
 }
 
-i.price{
+.menu1 i.price{
     display: flex;
     justify-content: center;
     min-width: 100px;
     
 }
 
-div.text h4{
+.menu1 div.text h4{
     display: flex;
     min-width: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
-h4.name{
+.menu1 h4.name{
     display: flex;
     justify-content: center;
     display: block;
 }
 
-.con,.con .text{
+.menu1 .con,.menu1 .con .text{
     background-color: rgb(78, 255, 116);
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
-div.pic{
+.menu1 div.pic{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-content: center;
     min-width: 250px;
     background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5pAWvKU6DBHRR-wQ7q0ikHWXYMnvQ3XYAWQ&usqp=CAU");
 }
