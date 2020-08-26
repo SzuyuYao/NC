@@ -92,6 +92,11 @@
             margin-bottom: 20px;
         }
     </style>
+    <script>
+        function myFunction() {
+            alert("已送出表單，客服人員會盡快為您服務");
+        }
+    </script>
 </head>
 
 <body>
@@ -131,7 +136,9 @@
                 </span>
 
                 <p>店名 <input type="text" name="shop"></p>
-                <p><button type="button" class="btn btn-danger">送出</button></p>
+                <span>                    
+                    <input type="button" class="btn btn-danger" onclick="myFunction()" value="送出">
+                </span>
 
             </form>
         </div>
