@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.min.css"
         integrity="sha512-njWvXjJPMYfvYHb2DAnEL0MS5KEmoIeZVdpK7tpxiApoL3ZoUzHSvkoSFrbASdTuIHnEVG+Ko+ES/DXKygBH4g=="
         crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script
+        src="https://szuyuyao.github.io/NC/%E6%84%8F%E8%A6%8B%E8%A1%A8%E5%96%AE.html/jquery.twzipcode.min.js"></script>
+
     <style>
         /* CSS */
         body {
@@ -70,12 +74,12 @@
 
         .left {
             grid-area: left;
-            color:rgb(255, 11, 11);
+            color: rgb(255, 11, 11);
         }
 
         .right {
             grid-area: right;
-            color:orange;
+            color: orange;
         }
 
         .main {
@@ -98,7 +102,7 @@
         <div class="header" style="font-weight:bold">
             意見表單
         </div>
-        <div class="left"style="font-size: 3rem;">
+        <div class="left" style="font-size: 3rem;">
             <i class="fas fa-bread-slice fa-spin"></i>
 
         </div>
@@ -121,16 +125,20 @@
                 <p><textarea name="textarea" rows="10" cols="50"></textarea></p>
                 <p>店家資訊
                     <select name="num4">
+                        <div id="twzipcode"></div>
+                        <script>
+                            $("#twzipcode").twzipcode();
+                        </script>
                         <option value="1">縣市</option>
-                        <option value="2">台中市</option>
-                        <option value="3">彰化縣</option>
-                        <option value="4">雲林縣</option>
+                        <option value="2">商品客訴</option>
+                        <option value="3">其他客訴</option>
+                        <option value="4">我要發言</option>
                     </select>
                     <select name="num4">
                         <option value="1">鄉鎮區</option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
+                        <option value="2">商品客訴</option>
+                        <option value="3">其他客訴</option>
+                        <option value="4">我要發言</option>
                     </select></p>
                 <p>店名 <input type="text" name="shop"></p>
                 <p><button type="button" class="btn btn-danger">送出</button></p>
@@ -139,7 +147,7 @@
         </div>
 
 
-        <div class="right"style="font-size:3rem;">
+        <div class="right" style="font-size:3rem;">
             <i class="fas fa-hamburger fa-spin"></i>
         </div>
         <div class="footer">
