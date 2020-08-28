@@ -30,9 +30,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.min.css"
         integrity="sha512-njWvXjJPMYfvYHb2DAnEL0MS5KEmoIeZVdpK7tpxiApoL3ZoUzHSvkoSFrbASdTuIHnEVG+Ko+ES/DXKygBH4g=="
         crossorigin="anonymous" />
-    <script src="./js/AddressSelectList.j"></script>
+    <script src="./js/AddressSelectList.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
     <style>
         /* CSS */
         body {
@@ -134,7 +133,8 @@
                 <p>意見內容</p>
                 <p><textarea name="textarea" rows="10" cols="50"></textarea></p>
                 <p>店家資訊
-                      <script type="text/javascript">
+                    <span id="twzipcode">
+                        <script type="text/javascript">
                             window.onload = function () {
                                 //當頁面載完之後，用AddressSeleclList.Initialize()，
                                 //傳入要綁定的縣市下拉選單ID及鄉鎮市區下拉選單ID
